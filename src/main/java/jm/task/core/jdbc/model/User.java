@@ -62,6 +62,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User: " + this.getName() + " " + this.getLastName();
+        return new StringBuilder().append("User: ").append("name - ").append(getName()).append(", lastName - ").append(getLastName()).append(", Age - ").append(getAge()).toString();
     }
 }
