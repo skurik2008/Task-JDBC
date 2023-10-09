@@ -62,6 +62,12 @@ public class User {
 
     @Override
     public String toString() {
-        return new StringBuilder().append("User: ").append("name - ").append(getName()).append(", lastName - ").append(getLastName()).append(", Age - ").append(getAge()).toString();
+        final StringBuilder sb = new StringBuilder("User{");
+        sb.append("id=").append(getId());
+        sb.append(", name='").append(getName()).append('\'');
+        sb.append(", lastName='").append(getLastName()).append('\'');
+        sb.append(", age=").append(getAge());
+        sb.append('}');
+        return sb.toString();
     }
 }
