@@ -14,7 +14,7 @@ public class Main {
         userS.saveUser("Си", "Цзиньпин", (byte) 70);
         userS.saveUser("Владимир", "Зеленский", (byte) 45);
         List<User> allUsers = userS.getAllUsers();
-        allUsers.forEach(user -> System.out.println(user.toString()));
+        allUsers.forEach(System.out::println);
         userS.cleanUsersTable();
         userS.dropUsersTable();
     }
